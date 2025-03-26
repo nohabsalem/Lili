@@ -1,0 +1,22 @@
+{
+  "name": "starter-react-cdpi",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd back && npm run test -- run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "axios": "^1.7.9",
+    "chart.js": "^4.4.7",
+    "react-chartjs-2": "^5.3.0"
+  }
+}

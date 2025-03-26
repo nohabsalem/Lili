@@ -1,0 +1,250 @@
+.profil-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: -70px;
+    padding: 10px 20px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profil-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E3A8A;
+    text-align: center;
+}
+
+.profil-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.profil-info {
+    flex: 1;
+    margin-left: 0;
+    width: 100%;
+}
+
+.profil-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.profil-grid label {
+    font-weight: bold;
+}
+
+.profil-grid input,
+.profil-address input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profil-status {
+    margin-top: 20px;
+}
+
+.status-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-open,
+.btn-closed {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #9f9999; 
+    color: white;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-open:hover,
+.btn-closed:hover {
+    background-color: #3bd640; 
+    transform: scale(1.05);
+}
+
+.btn-open.active {
+    background-color: #3bd640;
+}
+
+.btn-open.closed:hover {
+    background-color: #9f9999;
+}
+
+.btn-closed.active {
+    background-color: #DC2626;
+}
+
+.profil-address {
+    margin-top: 20px;
+}
+
+.profil-address h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profil-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-edit,
+.btn-save {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #328048; 
+    color: white;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-edit:hover,
+.btn-save:hover {
+    background-color: #2563EB; 
+    transform: scale(1.05);
+}
+
+.btn-menu {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #328048;
+}
+
+@media (min-width: 601px) {
+    .btn-menu {
+        width: auto;
+    }
+}
+
+.btn-closed {
+    background-color: #978d8d;
+}
+
+.btn-closed:hover {
+    background-color: #DC2626;
+}
+
+.profil-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dropdown-container {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    padding: 8px 16px;
+    background-color: #328048;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: #2563EB; 
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.dropdown-menu input[type="checkbox"] {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .profil-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profil-actions {
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .btn-menu {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .profil-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profil-actions {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .btn-menu {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .btn-menu {
+        width: 20%;
+        height: 50px;
+        border-radius: 8%;
+    }
+
+    .profil-actions {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
