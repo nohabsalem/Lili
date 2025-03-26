@@ -1,14 +1,12 @@
 // "use client";
 "use client";
-import { ADMIN, ASSO, RESTO, MANAGER, AGENT } from "@/config";
 import { useNavigate } from 'react-router-dom';
 import { ADMIN, ASSO, RESTO, MANAGER, AGENT } from "@/config";
-import { useNavigate } from 'react-router-dom';
 import { signIn } from "@/api/auth";
 
 // Import composants
-import Header from "@/layout/PublicLayout/Header";
-import Footer from "@/layout/PublicLayout/Footer";
+// import Header from "@/layout/PublicLayout/Header";
+// import Footer from "@/layout/PublicLayout/Footer";
 import logo from "../../assets/img/logo.png";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -28,7 +26,6 @@ const loginSchema = z.object({
 
 export default function Login() {
   const [errorMessage, setErrorMessage] = useState(""); // <-- État pour stocker l'erreur
-  const navigate = useNavigate();
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm({
     resolver: zodResolver(loginSchema),
@@ -74,7 +71,7 @@ export default function Login() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 overflow-hidden">
 
-      <Header />
+      {/* <Header /> */}
 
       <main className="flex flex-1 justify-center items-center p-6">
         <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-300 w-full max-w-md flex flex-col items-center">
