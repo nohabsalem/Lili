@@ -4,7 +4,6 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import Sidebar from "@/components/ui/sidebar-resto";
 import Header from "@/components/ui/navbar";
-import { ADMIN, ASSO, RESTO, MANAGER, AGENT } from "@/config";
 
 export default function RestoLayout() {
   let navigate = useNavigate();
