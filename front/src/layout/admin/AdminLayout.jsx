@@ -44,7 +44,7 @@ export default function AdminLayout() {
         <div className="flex flex-col flex-1">
           <Header toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
 
-          {location.pathname === "/admin" && (
+          {/* {location.pathname === "/admin" && (
             <div className="bg-white py-10">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <h1 className="text-2xl font-bold mb-10">Vos Statistiques :</h1>
@@ -58,7 +58,7 @@ export default function AdminLayout() {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
 
           <main className="flex-1 p-6 w-full">
             <div className="mx-auto max-w-7xl w-full">
