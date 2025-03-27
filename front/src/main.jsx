@@ -10,6 +10,8 @@ import { ADMIN, ASSO, MANAGER, RESTO } from "../src/config/index";
 
 // Importation des layouts
 import AdminLayout from "./layout/admin/AdminLayout";
+import AssoLayout from "./layout/associations/AssoLayout";
+import RestoLayout from "./layout/restaurants/RestaurantLayout";
 
 // Importation des pages publiques
 import HomeGuest from "./page/home";
@@ -65,19 +67,15 @@ if (root) {
           {/* Routes Association */}
           <Route path="/association" element={
             <AuthGuard allowedRoles={["ASSO"]}>
-              {/* <AssoLayout /> */}
+              <AssoLayout />
             </AuthGuard>}>
           </Route>
 
           <Route path="/restaurateur" element={
             <AuthGuard allowedRoles={["RESTO"]}>
-              {/* <RestoLayout /> */}
+              <RestoLayout />
             </AuthGuard>}>
           </Route>
-
-          {/* Routes Restaurateur */}
-          {/* <Route path="/restaurateur" element={<RestoLayout />}>
-          </Route> */}
 
           {/* Routes pour les mots de passe :  */}
           <Route path="/oubli-mot-de-passe" element={<OubliMDP />} />
