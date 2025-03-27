@@ -57,11 +57,11 @@ if (root) {
           <Route path="/admin" element={
             <AuthGuard allowedRoles={["ADMIN"]}>
               <AdminLayout />
-              <Route path="users" element={<UserList />} />
-              {/* <Route path="restaurants" element={<ListResto />} /> */}
-              {/* <Route path="associations" element={<ListAsso />} /> */}
-            </AuthGuard>}>
-
+            </AuthGuard>
+          }>
+            <Route path="users" element={<UserList />} />
+            {/* <Route path="restaurants" element={<ListResto />} /> */}
+            {/* <Route path="associations" element={<ListAsso />} /> */}
           </Route>
 
           {/* Routes Association */}
