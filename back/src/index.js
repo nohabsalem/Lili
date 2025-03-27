@@ -2,10 +2,6 @@ import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import router from './routes/index.js'
-// import CguRouter from './routes/Cgu.router.js';
-
-// app.route('/api/CguRouter', CguRouter);
-
 
 
 const app = new Hono()
