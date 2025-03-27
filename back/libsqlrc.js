@@ -15,13 +15,7 @@
 export default {
   development: {
     connection: {
-      url: "file:local.db",
-    },
-  },
-  production: {
-    connection: {
-      url: "libsql://...",
-      authToken: "...",
+      url: "file:lili.db",
     },
   },
 };
