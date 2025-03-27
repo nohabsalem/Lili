@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-// import logo from "@/assets/img/logo";
 import logo from "@/assets/img/ipsum.svg"
-// front / src / assets / img / logo.png
+
 const Error404 = () => {
     return (
         <div className="flex flex-col min-h-screen bg-gray-100">
