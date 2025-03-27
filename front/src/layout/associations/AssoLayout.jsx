@@ -7,7 +7,7 @@ import Header from "@/components/ui/navbar";
 
 export default function AssoLayout() {
   let navigate = useNavigate();
-  let accessToken = localStorage.getItem("accessToken") ?? null;
+  let accessToken = localStorage.getItem("accessToken");
 
   useState(() => {
     if (!accessToken) {

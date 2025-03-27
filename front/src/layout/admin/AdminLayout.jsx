@@ -15,13 +15,13 @@ import { getAsso } from "@/api/asso";
 
 export default function AdminLayout() {
   let navigate = useNavigate();
-  let accessToken = localStorage.getItem("accessToken") ?? null;
+  let accessToken = localStorage.getItem("accessToken");
 
   if (!accessToken) {
     navigate("/auth/login");
   }
 
-  let role = localStorage.getItem("role") ?? null;
+  let role = localStorage.getItem("role");
   let navLinks = [];
 
   if (role === "ADMIN") {

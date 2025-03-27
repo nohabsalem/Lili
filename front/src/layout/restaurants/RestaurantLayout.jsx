@@ -7,7 +7,7 @@ import Header from "@/components/ui/navbar";
 
 export default function RestoLayout() {
   let navigate = useNavigate();
-  let accessToken = localStorage.getItem("accessToken") ?? null;
+  let accessToken = localStorage.getItem("accessToken");
 
   useState(() => {
     if (!accessToken) {
@@ -15,7 +15,7 @@ export default function RestoLayout() {
     }
   })
 
-  let role = localStorage.getItem("role") ?? null;
+  let role = localStorage.getItem("role");
   let navLinks = [];
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
