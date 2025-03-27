@@ -9,7 +9,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 import { Link } from 'react-router-dom';
-import logo from "@/assets/img/logo-blanc.svg"
+import logo from "@/assets/img/ipsum.svg"
 
 const navigation = [
   { name: 'Dashboard', to: '/admin', icon: HomeIcon, current: true },
